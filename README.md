@@ -78,23 +78,6 @@ final_score    = normalize( θ*demand_score + (1-θ)*geo_blend )
 
 ---
 
-## 설치
-
-```bash
-# Python 3.10+ (권장 3.12)
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-source .venv/bin/activate
-pip install -U pip wheel
-
-pip install "pandas>=2.2" "numpy>=2.0" "scikit-learn>=1.4" hdbscan umap-learn
-pip install "sentence-transformers>=3.0" torch   # GPU 환경은 CUDA 휠에 맞춰 설치
-pip install rank-bm25 rapidfuzz httpx selectolax lxml beautifulsoup4
-pip install matplotlib wordcloud tqdm pydantic
-```
-
----
-
 ## 입출력 형식
 
 **입력 (전처리 완료 .xlsx)**
